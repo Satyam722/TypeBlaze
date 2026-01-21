@@ -1,0 +1,9 @@
+# Ignore .env files in any directory (root, frontend, or backend)
+**/.env
+
+# Specific paths just to be safe
+frontend/.env
+backend/.env
+
+# Also ignore dependency folders
+**/node_modules/
