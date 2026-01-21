@@ -3,6 +3,21 @@
 
 ---
 
+## 🚀 Tech Stack
+
+### Frontend
+* **React.js** (Vite) - Component-based UI logic.
+* **Socket.io-client** - Real-time bidirectional event handling.
+* **Tailwind CSS** - Modern, responsive styling.
+* **Lucide React** - High-quality UI icons.
+
+### Backend
+* **Node.js & Express** - Server-side architecture.
+* **Socket.io** - Powering real-time multiplayer lobbies and live sync.
+* **CORS** - Secure cross-origin resource sharing.
+
+---
+
 ## 📸 Project Showcase
 
 ### 🏠 Landing Page
@@ -33,7 +48,7 @@ Start a private session and choose your difficulty level.
 <br/>
 
 ### 👥 Join Room
-Enter a 6-digit code to compete against your friends.
+Enter a 6-digit code to compete against your friends via WebSockets.
 <br/>
 
 ![Join](./screenshot/join.png)
@@ -44,7 +59,7 @@ Enter a 6-digit code to compete against your friends.
 
 ```text
 typeblaze/
-├── backend/                # Node.js / Express Server
+├── backend/                # Node.js / Express / Socket.io
 │   ├── .env                # Private API keys (Hidden)
 │   └── server.js           # Main entry point
 ├── frontend/               # React.js / Vite Client
@@ -59,38 +74,9 @@ typeblaze/
 └── README.md               # Documentation
 
 
-🚀 Key Features
-Real-time Multiplayer: Compete using unique 6-digit room codes.
-
-Live Analytics: Instant feedback on WPM and Accuracy.
-
-Difficulty Tiers: Easy, Medium, and Hard challenges.
-
-Modern UI: Immersive dark-themed interface for maximum focus.
-
-
-🛠️ Setup Instructions
-
-1. Environment Configuration
-Create .env files in both folders (these are ignored by Git for security):
-
-Frontend (/frontend/.env): VITE_API_URL=http://localhost:5000
-
-Backend (/backend/.env): PORT=5000
-
-
-2. Installation
-Start Backend:
-
-Bash
-
-cd backend
-npm install
-npm start
-Start Frontend:
-
-Bash
-
 cd frontend
 npm install
 npm run dev
+
+License
+Distributed under the MIT License.
